@@ -78,12 +78,14 @@ public class Calculadora2Funcionalidades {
         }
         return sortir;
     }
-
+    
+    // Método que recibe 2 parámetros y realiza la operación
     public static double Multiplicar(double n1, double n2) {
         System.out.println("El resultado es: " + n1 * n2);
         return n1 * n2;
     }
 
+    // Método que recibe 2 parámetros y realiza la operación    
     public static double Dividir(double n1, double n2) {
         System.out.println("El resultado es: " + n1 / n2);
         if (n1 > n2) {
@@ -106,18 +108,21 @@ public class Calculadora2Funcionalidades {
 //        return resultado;
 //    }
 
+    // Método que recibe 1 parámetro y realiza la operación    
     public static double seno(double num1) {
         double resultado = Math.sin(num1);
         System.out.println("El resultado es: " + resultado);
         return resultado;
     }
 
+    // Método que recibe 1 parámetro y realiza la operación    
     public static double coseno(double num1) {
         double resultado = Math.sin(num1);
         System.out.println("El resultado es: " + resultado);
         return resultado;
     }
 
+    // Método para comprobar si es un entero.    
     public static int llegirInt(String xComent) {
         boolean intCorrecte;
         int x = 0;
