@@ -81,11 +81,13 @@ public class Calculadora3_funcionalidades {
         return sortir;
     }
 
+    // Método que recibe 2 parámetros y realiza la operación    
     public static double Multiplicar(double n1, double n2) {
         System.out.println("El resultado es: " + n1 * n2);
         return n1 * n2;
     }
 
+    // Método que recibe 2 parámetros y realiza la operación
     public static double Dividir(double n1, double n2) {
         System.out.println("El resultado es: " + n1 / n2);
         if (n1 > n2) {
@@ -96,12 +98,14 @@ public class Calculadora3_funcionalidades {
         }
     }
 
+    // Método que recibe 1 parámetro y realiza la operación    
     public static double raizCuadrada(double num1) {
         double resultado = Math.sqrt(num1);
         System.out.println("El resultado es: " + resultado);
         return resultado;
     }
 
+    // Método que recibe 1 parámetro y realiza la operación    
     public static double raizCubica(double num1) {
         double resultado = Math.sqrt(num1);
         System.out.println("El resultado es: " + resultado);
