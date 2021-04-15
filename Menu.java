@@ -20,7 +20,7 @@ public class Menu {
         System.out.println("Opció SORTIR seleccionada. Sortint del programa...");
     }
 
-    //Mostrar opcions de Menú
+    //Aquí mostramos las opciones del menú
     public static void mostrarMenu() {
         System.out.println("___________________MENÚ___________________");
         System.out.println("1.-Suma . ");
@@ -30,7 +30,7 @@ public class Menu {
         System.out.println("5.- Sortir.");
     }
 
-    //Recorrer Menú
+    //Aquí recorremos el menú con el switch case , donde cada número (1,2,3,4,5) será un método que hara la respectiva funcionalidad
     public static boolean llegirMenu() throws IOException {
         boolean sortir = false;
         int opcio = llegirInt("Selecciona una opció: ");
@@ -51,14 +51,15 @@ public class Menu {
                 sortir = true;
                 break;
             default:
-                System.out.println("Opció no vàlida, intena escollir una opció entre el 1 i el 2...");
+                //En caso de introducir un número que no se encuentre en ninguno de los case se mostrará el siguiente mensaje
+                System.out.println("Opció no vàlida, intena escollir una opció entre el 1 i el 5...");
                 break;
         }
         return sortir;
     }
     
 
-
+    //Métodos para leer enteros con control de error en caso de introducir un caracter 
     public static int llegirInt(String xComent) {
         boolean intCorrecte;
         int x = 0;
@@ -71,6 +72,7 @@ public class Menu {
                 x = lector.nextInt();
                 lector.nextLine();
             } else {
+                //En caso de introducir un carácter incorrecto se mostrarán los siguientes mensajes
                 System.out.println("El valor introduït no és un número ENTER. Ha de ser-ho...");
                 System.out.print("Prova-ho de nou: ");
                 lector.nextLine();
